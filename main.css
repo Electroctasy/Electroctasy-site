@@ -1,0 +1,448 @@
+.odd {
+    background-color: var(--secondary-bg-color);
+}
+
+.even {
+    background-color: var(--bg-color);
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.btns {
+    border-radius: 10px;
+	background-color: var(--bg-color);
+	
+	color: var(--main-font-color);
+		
+	font-size: 16px;
+	padding: 0.25em 1em;
+	width: 14em;
+	font-weight: 600;
+	transition: 250ms ease-in-out all;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    margin-top: 0.75em;
+}
+
+.btns:hover {
+	background-color: var(--secondary-bg-color);
+    border: var(--main-font-color) 1px solid;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+#welcome p {
+    font-size: 22px;
+    color: var(--subtext-font-color);
+}
+
+
+#welcome img {
+    width: 45%;
+    margin-left: 15px;
+}
+
+#wlcm-txt-container {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    flex-direction: column;
+}
+
+#wlcm-txt-container *:not(:last-child) {
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+.sec-titles {
+    padding: 1.5em 1.75em;
+   
+    float: right;
+    width: max-content;
+
+}
+
+.sec-titles p {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.sec-titles hr {
+    margin-top: 0.3em;
+    width: 50%;
+    float: right;
+    background-color: wheat;
+    height: 3px;
+}
+
+#path-cards-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 47.5vh); /* Adjust the number and width of columns */
+    grid-template-rows: repeat(2, 45.125vh); /* Adjust the height of rows; 'auto' will size rows based on content */
+    grid-gap: 8vh 10vh ; /* Adjust the gap between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    align-content: center; /* Center the grid vertically */
+    margin-top: 3em;
+    direction: rtl;
+}
+
+#path-cards-container .path-cards {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: #111520;
+    border-bottom: 3px solid #0043FD;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#path-cards-container .path-cards .img {
+   width: 81%;
+   height: 76%;
+   background-color: #d9d9d9;
+   border-radius: 10px;
+   margin-bottom: 5px;
+}
+
+#path-cards-container .path-cards p {
+    font-size: 24px;
+ }
+
+#pathways {
+    height: max-content;
+    padding: 2em;
+}
+
+.project-containers {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row-reverse;
+}
+
+.project-details {
+	z-index: 8;
+	display: flex;
+	flex-direction: column;
+	padding: 1em 1.5em;
+	width: 45%;
+	height: 60%;
+	align-items: flex-end;
+	transform: translateX(-5.5em);
+	justify-content: space-evenly;
+}
+
+
+.project-details h4 {
+	font-size: 16px;
+	color: var(--subtext-font-color);
+}
+
+.project-details h3 {
+	font-size: 24px;
+	color: var(--main-font-color);
+}
+
+.project-details .project-description {
+	width: 100%;
+	height: 50%;
+	background-color: var(--bg-color);
+	border-radius: 5px;
+	box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.25);
+	padding: 1.5em;
+	font-size: 14px;
+}
+
+
+.project-details button img {
+	height: 55%;
+}
+
+.project-details button {
+	border-radius: 10px;
+	background-color: var(--bg-color);
+	
+	color: var(--main-font-color);
+		
+	font-size: 16px;
+	padding: 0.25em 1em;
+	width: 14em;
+	font-weight: 600;
+	transition: 250ms ease-in-out all;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    margin-top: 0.75em;
+}
+
+.project-details button:hover {
+	background-color: var(--secondary-bg-color);
+    border: var(--main-font-color) 1px solid;
+}
+
+.project-img{
+	height: 50%;
+	width: 45%;
+	background-color: #C4C4C4;
+	background-repeat: no-repeat;
+	background-size:cover;
+    transform: translateX(4em);
+}
+	
+
+#projects {
+    height: max-content;
+    padding: 2em;
+}
+
+#project-previews {
+    transform: translateX(-50%);
+    margin-left: 50%;   
+}
+
+#com-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#com-container h1 {
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+
+#com-container p {
+    font-size: 22px;
+    color: var(--subtext-font-color);
+}
+
+
+#com-container img {
+    width: 45%;
+    margin-left: 25px;
+}
+
+#com-txt-container {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    flex-direction: column;
+}
+
+#com-txt-container *:not(:last-child) {
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+#community {
+    height: max-content;
+    padding: 3em 2em;
+}
+
+@media screen and (max-width: 1080px) and (min-width: 320px) {
+    #welcome img {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    #path-cards-container {
+        width: 100%;
+        height: 280vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #path-cards-container .path-cards {
+        margin-bottom: 30px;
+        width: 85%;
+    }
+
+    #path-cards-container .path-cards p {
+        font-size: 16px;
+    }
+
+    #wlcm-txt-container *:not(:last-child) {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #welcome h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    #welcome p {
+        font-size: 12px;
+    }
+
+    #wlcm-txt-container {
+        align-items: center;
+    }
+
+    #welcome {
+        flex-direction: column-reverse;
+    }
+
+    #project-title {
+		font-size: 18px;
+		margin-bottom: 2.5em;
+	}
+
+	.project-containers, .even-project-container {
+		flex-direction: column-reverse;
+		margin-bottom:3em;
+	}
+
+	.project-details {
+		z-index: 8;
+		display: flex;
+		flex-direction: column;
+		padding: 1em 0.5em;
+		width: 90%;
+		height: 75%;
+		justify-content: space-evenly;
+		transform: translateX(0);
+		align-items: center;
+	}
+
+	.project-img, .even-project-img {
+		height: 70%;
+		width: 100%;
+		transform: translateX(0);
+		
+	}
+
+	.project-details h3 {
+		font-size: 20px;
+        margin-bottom: 15px;
+	}
+
+	.project-details h4 {
+		font-size: 14px;
+	}
+
+	.project-details ul li {
+		margin: 0 1em;
+		font-size: 12px;
+	}
+
+	.project-details button {
+		border-radius: 10px;
+		font-size: 12px;
+		padding: 0 0.5em;
+		width: 14em;
+	}
+
+    .project-details .project-description  {
+		font-size: 10px;
+        height: 25vh;
+	}
+
+    #com-container img {
+        width: 95%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #com-txt-container *:not(:last-child) {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #com-container h1 {
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+    }
+    #com-container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #com-txt-container {
+        align-items: center;
+    }
+
+    #com-container {
+        flex-direction: column-reverse;
+    }
+
+    .sec-titles {
+        float:none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec-titles p {
+        font-size: 28px;
+    }
+
+    footer {
+        height: 25vh;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: center;
+}
+    footer #socials {
+        width: 100%;
+        height: auto;
+    }
+    footer #socials img {
+        height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    #path-cards-container .path-cards {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    #path-cards-container .path-cards {
+        width: 35%;
+    }
+
+    #welcome img {
+        width: 45%;
+        margin-left: 0;
+    }
+
+    .project-containers {
+        height: 100vh;
+    }
+    #com-container img {
+        width: 50%;
+    }
+}
